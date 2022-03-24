@@ -105,7 +105,7 @@ public class MainBotClass extends TelegramLongPollingBot {
                             System.out.println(userIdList);
                         }
                         //CANCEL
-                        if (message.getText().equals("Відбій")) {
+                        else if (message.getText().equals("Відбій")) {
                             for (Long i : userIdList) {
                                 for (int k = 1; k < 4; k++) {
                                     SendMessage sendMessage = SendMessage.builder().text(
