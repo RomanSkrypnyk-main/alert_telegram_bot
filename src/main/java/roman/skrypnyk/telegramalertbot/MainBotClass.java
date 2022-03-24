@@ -58,7 +58,7 @@ public class MainBotClass extends TelegramLongPollingBot {
         // the format of your date
         SimpleDateFormat sdf = new java.text.SimpleDateFormat("yyyy-MM-dd HH:mm");
         // give a timezone reference for formatting
-        //sdf.setTimeZone(java.util.TimeZone.getTimeZone("GMT+2"));
+        sdf.setTimeZone(java.util.TimeZone.getTimeZone("GMT+2"));
         String formattedDate = sdf.format(date);
 
         if (update.hasMessage()) {
