@@ -136,16 +136,16 @@ public class MainBotClass extends TelegramLongPollingBot {
                             e.printStackTrace();
                         }
                     }
-                } else {
-                    try {
-                        DeleteMessage deleteMessage = new DeleteMessage();
-                        deleteMessage.setChatId(String.valueOf(message.getChatId()));
-                        deleteMessage.setMessageId(message.getMessageId());
-                        execute(deleteMessage);
-                    } catch (TelegramApiException e) {
-                        e.printStackTrace();
+                } //else {
+                   // try {
+                    //    DeleteMessage deleteMessage = new DeleteMessage();
+                    //    deleteMessage.setChatId(String.valueOf(message.getChatId()));
+                   //     deleteMessage.setMessageId(message.getMessageId());
+                   //     execute(deleteMessage);
+                   // } catch (TelegramApiException e) {
+                   //     e.printStackTrace();
                     }
-                }
+                //}
             }
         }
     }
