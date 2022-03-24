@@ -71,7 +71,7 @@ public class MainBotClass extends TelegramLongPollingBot {
                 }
                 //ADMIN
                 if (adminId.contains(userId)) {
-                    if (message.getText().equals("Тривога") || message.getText().equals("Відміна") || message.getText().equals("/start")) {
+                    if (message.getText().equals("Тривога") || message.getText().equals("Відбій") || message.getText().equals("/start")) {
                         sendMessageService.KeyboadrAdmin(message, formattedDate);
 
                         //MESSAGE TO USERS
