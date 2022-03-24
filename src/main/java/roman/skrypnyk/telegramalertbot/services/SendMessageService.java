@@ -38,7 +38,7 @@ public class SendMessageService {
         replyKeyboardMarkup.setKeyboard(keyboardRows);
         replyKeyboardMarkup.setResizeKeyboard(true);
         //SendMessage sendMessage = new SendMessage();
-        SendMessage sendMessage = SendMessage.builder().text("<b>" + "натиснута: " + message.getText() + "\n" + date + "</b>")
+        SendMessage sendMessage = SendMessage.builder().text("<b>" + "натиснуто: " + message.getText() + "\n" + date + "</b>")
                 .parseMode("HTML")
                 .chatId(String.valueOf(message.getChatId()))
                 .build();
