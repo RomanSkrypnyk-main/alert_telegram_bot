@@ -144,7 +144,7 @@ public class MainBotClass extends TelegramLongPollingBot {
                    //     execute(deleteMessage);
                    // } catch (TelegramApiException e) {
                    //     e.printStackTrace();
-                    }
+                   // }
                 //}
             }
         }
