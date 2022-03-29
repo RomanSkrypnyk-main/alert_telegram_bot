@@ -19,7 +19,7 @@ public class SendMessageService {
     }
 
     public void hello(Message message){
-        SendMessage sendMessage = SendMessage.builder().text("<b>" +  "Бот увімкнений" +  "</b>")
+        SendMessage sendMessage = SendMessage.builder().text("<b>" +  "Бот увімкнений ! " +  "</b>" + "тестовий режим v1.0")
                 .parseMode("HTML")
                 .chatId(String.valueOf(message.getChatId()))
                 .build();
@@ -30,11 +30,11 @@ public class SendMessageService {
         ReplyKeyboardMarkup replyKeyboardMarkup = new ReplyKeyboardMarkup();
         ArrayList<KeyboardRow> keyboardRows = new ArrayList<KeyboardRow>();
         KeyboardRow row1 = new KeyboardRow();
-        KeyboardRow row3 = new KeyboardRow();
+        KeyboardRow row2 = new KeyboardRow();
         row1.add("Тривога");
-        row3.add("Відбій");
+        row2.add("Відміна");
         keyboardRows.add(row1);
-        keyboardRows.add(row3);
+        keyboardRows.add(row2);
         replyKeyboardMarkup.setKeyboard(keyboardRows);
         replyKeyboardMarkup.setResizeKeyboard(true);
         //SendMessage sendMessage = new SendMessage();
